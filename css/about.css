@@ -1,0 +1,45 @@
+
+
+/* Styles for mobile view */
+.mobile-view {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+
+/* Styles for tablet view */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .tablet-view {
+        padding: 30px;
+    }
+}
+
+/* Styles for desktop view */
+@media only screen and (min-width: 1025px) {
+    .desktop-view {
+        padding: 40px;
+    }
+}
+
+/* Styles for specific sections */
+.company-description {
+    margin-bottom: 30px;
+}
+
+.our-story, .about-electric-fireplaces, .reasons-to-shop, .our-guarantee {
+    margin-bottom: 40px;
+}
+
+.reasons-to-shop ol {
+    list-style-type: decimal;
+}
+
+.our-guarantee strong {
+    color: #009900;
+}
+
+/* Add more styles as needed */

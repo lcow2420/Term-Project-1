@@ -1,0 +1,359 @@
+/*
+ Author: Insha Hayat
+ File Name: styles.css
+ */
+
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    background-color: #E7F5F5;
+}
+.logo {
+    display: block;
+    max-width: 80px;
+    height: auto;
+    margin: 0 auto; 
+    /* float: left; */
+    /* padding-left: 20px; */
+}
+
+.round {
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+main {
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-style: Bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+
+/* Style rules for mobile viewport*/
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for header content */
+/* header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #373684;
+    
+} */
+
+header h1 {
+    font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: #262341;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    font-family: 'Francois One', sans-serif;
+    font-size: 1.25em;
+    border-top: 1px solid #e5e9fc;
+}
+nav li:first-child{
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #f9d94a;
+    /* text-align: center; */
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#info ul {
+    margin: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact .email-link {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map {
+    border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+    background-color: #262341;
+    height: 70px;
+}
+
+.copy{
+    padding-top: 3px;
+    color: #f9d94a;
+    font-size: small;
+}
+.name{
+    color: #f9d94a;
+}
+
+footer a {
+    color: #f9d94a;
+    text-decoration: none;
+    font-size: small;
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px),
+print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+
+    /* Tablet Viewport: Style rules for nav area*/
+    nav li {
+        border: none;
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    /* Tablet Viewport: Style rule for map */
+    .map {
+
+        width: 500px;
+        height: 450px;
+    }
+
+}
+
+/*Media Query for Desktop Viewport*/
+@media only screen and (min-width: 769px), print {
+
+    /* Desktop Viewport: Style rule for header */
+    /* header {
+        padding: 2%;
+    } */
+
+    /* Desktop Viewport: Style rules for nav area */
+    /* Style rule for nav li a selector */
+    nav li a {
+        padding: 0.7em 1.5em;
+    }
+
+    /* Style rule for nav li a selector using hover pseudo-class */
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e9fc;
+    }
+
+
+    #info ul {
+        margin-left: 5%;
+    }
+
+    /* Style rule for main h3 selector */
+    main h3 {
+        font-size: 1.5em;
+    }
+  
+
+    /* Style rule for #piano, #guitar, and #violin selectors */
+    #piano,
+    #guitar,
+    #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2% 0 2%;
+        /* Top/Bottom margin: 0, Left/Right margin: 2% */
+    }
+}
+
+/* Media Query for Print */
+@media print {
+
+    /* Style rule for body selector */
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+
+.banner p {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;}
+
+.product-of-the-week {
+    background-color: #e5e9fc;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 30px;
+}
+
+.product img {
+    max-width: 300px;
+    margin-right: 20px;
+    display: block;
+    padding-left: 40px;
+}
+
+.product-description {
+    text-align: left;
+}
+
+/* .product-description h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 2%;
+ 
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+} */
+
+.product-description p {
+    font-size: medium;
+    line-height: 1.5;
+}
