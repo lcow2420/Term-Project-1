@@ -1,0 +1,65 @@
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ffe5e5;
+}
+
+#additional-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#additional-content h2 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Hide table headers on small screens */
+    th {
+        display: none;
+    }
+    /* Ensure table data cells (td) span full width on small screens */
+    td {
+        display: block;
+        width: 100%;
+    }
+    /* Set specific styles for table cells */
+    td:before {
+        /* Add content from the relevant table header before each data cell */
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        width: 50%;
+        margin-left: -50%; /* Offset to align content properly */
+    }
+}
+
+

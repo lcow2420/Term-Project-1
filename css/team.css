@@ -1,0 +1,75 @@
+/* Styling for Team Page Images */
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article section {
+    text-align: center;
+}
+
+article section:last-child {
+    margin-right: 0;
+}
+
+article section figure {
+    display: inline-block; /* Ensures the figure and caption are treated as inline-block elements */
+    margin-bottom: 10px;
+    position: relative; /* Adds relative positioning to the figure element */
+    color: aliceblue;
+}
+
+article section figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+article section figcaption {
+    
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+/* Fonts */
+body {
+    font-family: 'Roboto', serif; /* Use the specified Google Font */
+    /* Add backup font family here */
+}
+
+article section p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px; /* Adjust margin bottom as needed */
+    text-align: justify; /* or left, center, right */
+    color: #333; /* Adjust text color as needed */
+}
+
+#story {
+    margin-bottom: 40px;
+}
+
+#story h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#story p {
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
