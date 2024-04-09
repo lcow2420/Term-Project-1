@@ -1,53 +1,102 @@
-<!-- 
-Student name: Insha Hayat
-Student id: c0931650
- -->
+<!DOCTYPE html>
+<html lang="en">
 
- <!DOCTYPE html>
- <html lang="en">
- 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="css/style.css">
-     <title> Electric Fireplace | Contact Us </title>
- </head>
- 
- <body>
-       
-     <header>
-         <nav>
-             <div class="logo">
-                 <a href="index.html"><img src="images/electric.png" alt="Fireplace Logo" /></a>
- 
-             </div>
-             <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="about.html">About</a></li>
-                 <li><a href="team.html">Our Team</a></li>
-                 <li><a href="specials.html">Specials</a></li>
-                 <li><a href="training.html">Training</a></li>
-                 <li><a href="media.html">Media</a></li>
-                 <li><a href="faqs.html">FAQs</a></li>
-                 <li><a href="contact.html">Contact Us</a></li>
-             </ul>
-         </nav>
-     </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Electric Fireplace</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="container">
+
+        <header>
+            <a class="logo" href="index.html"><img src="images/electric.png" alt="Fireplace Logo" /></a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Form Section -->
+        <form>
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below to get in touch with us.</p>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone"><br><br>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."
+                            required></textarea>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label for="contact-email">Email</label><br>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label><br>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>How did you hear about us?</legend>
+                        <select id="hear-about" name="hear-about">
+                            <option value="friend">Friend</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="internet-search">Internet Search</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
+                </li>
+                <li>
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+                </li>
+            </ol>
         
- 
- 
- 
-     <!-- Footer Section -->
-     <footer>
-         <p class="copy">
-             &copy;Copyrights 2024. All Rights Reserved
-         </p>
-         <p>
-             <a href=”mailto:contact@modernfireplace.net”>Request information</a><br>
-             <div class="name"> Insha Hayat &nbsp;&nbsp; c0931650</div>
-         </p>
-     </footer>
- </body>
- 
- </html>
+</form>
+    <div id="contact">
+        <h3>We are located at: 1122 Albert road, Chicago, IL 60007</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.4516956358!2d-88.
+        06161527413067!3d41.83377338289125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s
+        0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sca!
+            4v1706313039563!5m2!1sen!2sca" width="600" height="450" class="map" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+        <!-- Footer Section -->
+        <footer>
+            <p class="copy">&copy; Copyrights 2024. All Rights Reserved</p>
+            <p><a href="mailto:contact@modernfireplace.net">Request information</a><br>
+            <div class="name">Insha Hayat &nbsp;&nbsp; c0931650</div>
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>

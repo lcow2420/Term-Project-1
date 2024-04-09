@@ -142,6 +142,7 @@ main {
     font-family: Verdana, Arial, sans-serif;
 }
 
+
 main p {
     font-size: 1 em;
 }
@@ -169,7 +170,7 @@ main p {
 }
 
 .map {
-    border: 5px solid #373684;
+    border: 5px solid #262341;
     width: 95%;
     height: 50%;
 }
@@ -357,3 +358,4 @@ print {
     font-size: medium;
     line-height: 1.5;
 }
+

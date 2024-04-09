@@ -11,6 +11,32 @@ Student id: c0931650
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <style>
+        /* CSS for responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            #hero img {
+                max-width: 100%;
+            }
+
+            .product {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .product img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+   
     <title> Electric Fireplace | Specials </title>
 </head>
 
@@ -39,12 +65,11 @@ Student id: c0931650
         </div>
 
         <main>
-            <div class="mobile-view">
             <h1>Our Specials</h1>
             <section class="product-of-the-week">
                 <h2>Product of the Week</h2>
                 <div class="product">
-                    <img style="padding-right: 10%;" src="images/prodOfWeek.jpg" alt="Product of the Week">
+                    <img style="padding-right: 10%;" src="images/productweek.jpg" alt="Product of the Week">
                 
                     <div class="product-description">
                         
@@ -68,7 +93,6 @@ Student id: c0931650
                         <li>Environmental Responsibility</li>
                     </ul>
                 </div>
-            </div>
             </section>
 
         </main>

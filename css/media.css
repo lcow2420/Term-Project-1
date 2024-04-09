@@ -1,0 +1,55 @@
+/* Audio Player Styles */
+audio {
+    display: block;
+    margin: 20px auto; /* Adjust margin as needed */
+}
+
+/* Audio Controls */
+audio::-webkit-media-controls-panel {
+    background-color: #f9f9f9; /* Background color of control panel */
+    color: #333; /* Color of control icons */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-play-button-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #113f70; /* Color of play/pause button and time display */
+}
+
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    color: #555; /* Color of seek buttons */
+}
+
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-mute-button {
+    color: #555; /* Color of volume control */
+}
+
+audio::-webkit-media-controls-fullscreen-button {
+    color: #113f70; /* Color of fullscreen button */
+}
+
+
+
+/* CSS for video player */
+#video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#intro-text {
+    font-family: Arial, sans-serif; /* Use a web-safe font */
+    font-size: 22px; /* Adjust font size as needed */
+    color: #333; /* Set text color */
+    text-align: center; /* Center align the text */
+    margin: 20px auto; /* Center the text horizontally with some margin */
+    max-width: 600px; /* Set maximum width for better readability */
+    line-height: 1.5; /* Set line height for better spacing */
+
+}

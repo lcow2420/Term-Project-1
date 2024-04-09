@@ -1,0 +1,58 @@
+/* Style for FAQ section */
+.faqs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.faq-item h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Center align the heading */
+.faqs h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .faqs {
+        padding: 0 10px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .faq-item h2 {
+        font-size: 20px;
+    }
+
+    .faqs h1 {
+        font-size: 24px;
+    }
+}
